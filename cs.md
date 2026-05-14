@@ -112,9 +112,11 @@ TLS берет **лучшее от обеих идей**:
 
 6. **Shared Secret** — Сервер расшифровывает. Теперь у обеих сторон есть общий Pre-Master Secret
 
+![Пример](https://sun9-33.vkuserphoto.ru/s/v1/ig2/tWFlzDJB6PsWs6vTSiLvS_OAY7uYpLsZ_Gn-11qkjoPf9Xk1v-lQVOoRJ-RYhbDv-FDCQNgMx37hgeevxzcpJp5j.jpg?quality=95&as=32x23,48x35,72x52,108x78,160x115,240x173,360x259,480x346,540x389,640x461,709x511&from=bu&u=Pwjky7NHtQmxtJOiI44xrt4KqBK61f5RPbhiNqvAQls&cs=709x0)
+
 ## Обмен ключами: Diffie–Hellman
 
-**Ключевое отличие:** Секрет **НЕ передаётся** по сети вообще. Стороны независимо вычисляют одинаковый shared secret.
+**Ключевое отличие:** Секрет **Не передаётся** по сети вообще. Стороны независимо вычисляют одинаковый shared secret.
 
 ### Публичные параметры:
 - **p** — большое простое число
@@ -138,6 +140,8 @@ TLS берет **лучшее от обеих идей**:
   Сервер: s = A^b mod p
   Результат: s = g^(ab) mod p ✓ (одинаково!)
 ```
+
+![Пример](https://sun9-6.vkuserphoto.ru/s/v1/ig2/9HwAw-9JCB-ys8V7GJGhZKMRsI0qmlMenUEmyaI4GKgyz8j4isnOO9G6K9hIVEpzHvknVr9KEpX5TKaftwWdFNKH.jpg?quality=95&as=32x19,48x29,72x43,108x64,160x95,240x143,360x214,480x285,540x321,640x380,720x428,1080x642,1280x761,1302x774&from=bu&u=KPcPg-8ouwRdMN8UOY16ApcQ_uwipS8M4EYKMSdOa94&cs=1302x0)
 
 ### Итог:
 - Из Pre-Master Secret генерируются ключи симметричного шифрования
